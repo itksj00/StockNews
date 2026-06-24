@@ -102,10 +102,6 @@ if not run_btn:
     st.info("사이드바에서 Gemini API 키를 입력하고 브리핑 시작을 누르세요.")
     st.stop()
 
-if not gemini_key:
-    st.error("Gemini API 키를 입력해주세요.")
-    st.stop()
-
 eur_rate = get_eur_rate()
 
 for symbol in TICKERS:
